@@ -1,0 +1,255 @@
+.profile-container {
+  margin-top: 4rem;
+  padding-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.column-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  margin-top: 1rem;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  grid-gap: 20px;
+  height: 300px;
+  width: 100%;
+  border-radius: 7px;
+  background-color: white;
+  border: 1px solid rgba(144, 164, 144, 0.371);
+}
+
+.profile-header-section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  grid-gap: 20px;
+}
+
+.profile-image-wrapper {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-image {
+  height: 150px;
+}
+
+.section1-text {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile-status {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  grid-gap: 5px;
+  font-size: 14px;
+  border-radius: 7px;
+  background-color: rgb(220, 244, 213);
+}
+
+.status-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.status-text {
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  border-radius: 7px;
+}
+
+.edit-button {
+  cursor: pointer;
+}
+
+.edit-profile-button {
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.profile-header-section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  grid-gap: 15px;
+}
+
+.profile-comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-gap: 10px;
+  height: 100%;
+  width: calc(100% - 30px);
+  padding: 15px;
+  border-radius: 7px;
+  background-color: white;
+  border: 1px solid rgba(144, 164, 144, 0.371);
+}
+
+.comments-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.row-section {
+  width: 40%;
+  margin-top: 1rem;
+}
+
+.secrets-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  border-radius: 7px;
+  background-color: white;
+  border: 1px solid rgba(144, 164, 144, 0.371);
+}
+
+.your-secrets-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  background-color: rgb(220, 244, 213);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.secrets-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+.secret-profile-item {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(205, 225, 214);
+  width: calc(100% - 30px);
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.toggle-wrapper-open {
+  max-height: 200px;
+  transition: max-height 1s linear;
+  background-color: white;
+}
+
+.toggle-wrapper-closed {
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.secret-date {
+  font-size: 12px;
+}
+
+.comment-count-profile {
+  font-size: 14px;
+}
+
+.secret-detail-button {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.secret-profile-text {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-comments-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-item.profile {
+  width: 100%;
+}
+
+.load {
+  margin: 100px auto;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    grid-gap: 20px;
+    align-items: center;
+  }
+
+  .column-section {
+    width: 90%;
+  }
+
+  .row-section {
+    width: 90%;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    grid-gap: 20px;
+    height: auto;
+    padding: 10px 0 10px;
+  }
+
+  .profile-header-section1 {
+    width: 100%;
+  }
+
+  .profile-header-section2 {
+    width: 100%;
+  }
+}
