@@ -9,7 +9,7 @@ export const secretsList = async (apiUrl, setSecrets) => {
   };
 
   try {
-    const response = await fetch("http://secrets-project6969.herokuapp.com/secrets", requestOptions);
+    const response = await fetch("http://localhost:8000/secrets", requestOptions);
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
@@ -45,7 +45,7 @@ export const createSecret = async (apiUrl, secret, setSecrets) => {
 export const fetchUserSecrets = async (userId) => {
   try {
     // Fetch all secrets (adjust the URL as needed)
-    const response = await fetch('http://secrets-project6969.herokuapp.com/secrets');
+    const response = await fetch('http://localhost:8000/secrets');
 
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);

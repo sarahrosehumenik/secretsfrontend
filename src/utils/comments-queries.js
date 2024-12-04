@@ -1,6 +1,6 @@
 const addCommentToSecret = async (secretId, commentData) => {
   try {
-    const response = await fetch(`http://secrets-project6969.herokuapp.com/secrets/${secretId}/comments`, {
+    const response = await fetch(`http://localhost:8000/secrets/${secretId}/comments`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

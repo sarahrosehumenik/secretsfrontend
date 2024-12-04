@@ -1,6 +1,6 @@
 
 
-const apiUrl = 'http://secrets-project6969.herokuapp.com'; // Replace with your actual API endpoint
+const apiUrl = 'http://localhost:8000'; // Replace with your actual API endpoint
 
 const getUserById = async (userId) => {
   try {
@@ -10,6 +10,7 @@ const getUserById = async (userId) => {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const userData = await response.json();
+    console.log(userData)
     return userData;
   } catch (error) {
     console.error('Error fetching user:', error);
@@ -26,6 +27,7 @@ const getAllUsers = async (setUserList) => {
     }
 
     const users = await response.json();
+    console.log(users)
     setUserList(users)
     return users;
   } catch (error) {

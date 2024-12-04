@@ -65,8 +65,8 @@ export default function Home({ user, secrets, setSecrets, showAllComments, setSh
               <GoogleLogin
                 clientId="1001833171495-hmhvql5mvfu05uhpteb0umnm0es337vf.apps.googleusercontent.com"
                 buttonText="Login/Sign Up"
-                onSuccess={() => responseGoogle}
-                onFailure={() => responseGoogle}
+                onSuccess={(response) => responseGoogle(response)}
+                onFailure={(error) => responseGoogle(error)}
                 prompt="select_account"
                 cookiePolicy="single_host_origin"
                 render={renderProps => (

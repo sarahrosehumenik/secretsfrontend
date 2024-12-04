@@ -36,6 +36,7 @@ function App() {
 
     useEffect(() => {
     const storedUserData = localStorage.getItem('userData');
+    console.log(storedUserData)
     if (storedUserData) {
       const userData = JSON.parse(storedUserData);
       setUser(userData);
@@ -58,7 +59,7 @@ function App() {
 
   const  responseGoogle = (response) => {
     const userData = response
-    console.log(userData)
+    console.log('userData', userData)
     getUserById(userData.googleId).then((data) => {
     
       setUser(data)
